@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jamie Rees — Staff Engineer</title>
+  <meta name="description" content="Staff Engineer with over a decade of experience building scalable, user-focused web applications and leading high-performing engineering teams.">
+  <meta property="og:title" content="Jamie Rees — Staff Engineer">
+  <meta property="og:description" content="Staff Engineer with over a decade of experience building scalable, user-focused web applications and leading high-performing engineering teams.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    // Apply saved theme before render to prevent flash
+    (function() {
+      var theme = localStorage.getItem('theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+<body>
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <a href="#about" class="sidebar__logo" aria-label="Jamie Rees">JR</a>
+      <nav>
+        <ul class="sidebar__nav">
+          <li><a href="#about" class="sidebar__link sidebar__link--active" aria-label="About" data-section="about"><i class="fa-solid fa-user"></i></a></li>
+          <li><a href="#experience" class="sidebar__link" aria-label="Experience" data-section="experience"><i class="fa-solid fa-briefcase"></i></a></li>
+          <li><a href="#skills" class="sidebar__link" aria-label="Skills" data-section="skills"><i class="fa-solid fa-bolt"></i></a></li>
+          <li><a href="#projects" class="sidebar__link" aria-label="Projects" data-section="projects"><i class="fa-solid fa-rocket"></i></a></li>
+          <li><a href="#contact" class="sidebar__link" aria-label="Contact" data-section="contact"><i class="fa-solid fa-envelope"></i></a></li>
+        </ul>
+      </nav>
+      <div class="sidebar__spacer"></div>
+      <button class="sidebar__theme-toggle" aria-label="Toggle theme">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+      <section id="about" class="section">
+        <header>
+        <div class="section__label">About</div>
+        <h1 class="hero__name">Jamie Rees</h1>
+        <p class="hero__title">Staff Engineer</p>
+        <p class="hero__location"><i class="fa-solid fa-location-dot"></i> South England, UK</p>
+        <p class="hero__summary">Staff Engineer with over a decade of experience building scalable, user-focused web applications and leading high-performing engineering teams. Proven ability to architect and deliver enterprise-grade platforms, mentor engineers, and drive cross-functional initiatives from tooling strategy to AI adoption. Adept at balancing hands-on technical depth with leadership responsibilities, including hiring, strategy, and platform-level transformation.</p>
+
+        <div class="hero__stats">
+          <div class="stat">
+            <span class="stat__number">13+</span>
+            <span class="stat__label">Years Experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number">500M+</span>
+            <span class="stat__label">Docker Pulls</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number">80+</span>
+            <span class="stat__label">Team Scaled To</span>
+          </div>
+        </div>
+
+        <div class="hero__actions">
+          <a href="https://www.linkedin.com/in/jamiearees/" target="_blank" rel="noopener" class="btn btn--primary"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+          <a href="https://github.com/tidusjar" target="_blank" rel="noopener" class="btn btn--secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="mailto:tidusjar@gmail.com" class="btn btn--secondary"><i class="fa-solid fa-envelope"></i> Email</a>
+        </div>
+
+        <div class="hero__education">
+          <i class="fa-solid fa-graduation-cap"></i>
+          National Diploma ICT Practitioners — Ystrad Mynach College, 2009–2012
+        </div>
+        </header>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="section__label">Experience</div>
+
+        <div class="exp-card exp-card--expanded" data-expandable>
+          <button class="exp-card__header" aria-expanded="true" aria-controls="exp-body-0">
+            <div class="exp-card__info">
+              <h3 class="exp-card__company">Exclaimer</h3>
+              <p class="exp-card__role">Staff Engineer</p>
+            </div>
+            <div class="exp-card__meta">
+              <span class="exp-card__date">Feb 2023 – Present</span>
+              <i class="fa-solid fa-chevron-down exp-card__icon"></i>
+            </div>
+          </button>
+          <div class="exp-card__body" id="exp-body-0">
+            <ul>
+              <li>Core member of an ambitious cross-functional project to build a Managed Service Provider (MSP) platform, enabling the business to sell the product at a higher tier and unlock new revenue streams.</li>
+              <li>Led the safe and controlled rollout of AI tooling across engineering, balancing business needs with security and governance requirements.</li>
+              <li>Responsible for evaluating and ensuring engineering tooling is fit for purpose, driving adoption of the right tools to improve developer experience and productivity.</li>
+              <li>Provide architectural and strategic technical leadership across frontend teams using Angular and Nx.</li>
+              <li>Own end-to-end hiring, onboarding, and scaling of frontend teams.</li>
+              <li>Played a key role in scaling the engineering organisation from ~20 to 80+ engineers through hiring, process design, and team structure.</li>
+              <li>Drive process improvements, tooling decisions, and delivery workflows across multiple squads.</li>
+              <li>Mentor and support engineers in both technical growth and career development.</li>
+              <li>Lead cross-team Community of Practice sessions to promote standards, learning, and knowledge sharing.</li>
+              <li>Spearheaded the successful migration of 10+ years of source code and pipelines from Azure DevOps to GitHub with zero downtime or delivery disruption.</li>
+              <li>Collaborate closely with product, design, DevOps, and senior stakeholders to align engineering priorities with business goals.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-card" data-expandable>
+          <button class="exp-card__header" aria-expanded="false" aria-controls="exp-body-1">
+            <div class="exp-card__info">
+              <h3 class="exp-card__company">Exclaimer</h3>
+              <p class="exp-card__role">Lead Engineer</p>
+            </div>
+            <div class="exp-card__meta">
+              <span class="exp-card__date">Jan 2022 – Feb 2023</span>
+              <i class="fa-solid fa-chevron-down exp-card__icon"></i>
+            </div>
+          </button>
+          <div class="exp-card__body" id="exp-body-1">
+            <ul>
+              <li>Formed and led a brand-new engineering team to build a cutting-edge analytics platform using Angular + HighCharts + Azure Data Explorer.</li>
+              <li>Introduced Angular Module Federation to enable multi-team collaboration on a single Angular codebase.</li>
+              <li>Oversaw a high-priority greenfield onboarding product that enhanced customer experience and increased revenue.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-card" data-expandable>
+          <button class="exp-card__header" aria-expanded="false" aria-controls="exp-body-2">
+            <div class="exp-card__info">
+              <h3 class="exp-card__company">Exclaimer</h3>
+              <p class="exp-card__role">Senior Engineer</p>
+            </div>
+            <div class="exp-card__meta">
+              <span class="exp-card__date">Aug 2021 – Feb 2022</span>
+              <i class="fa-solid fa-chevron-down exp-card__icon"></i>
+            </div>
+          </button>
+          <div class="exp-card__body" id="exp-body-2">
+            <ul>
+              <li>Led authentication design and implementation in a modern Angular project.</li>
+              <li>Drove performance optimisation and collaborated with cross-functional teams to align technical decisions with product strategy.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-card" data-expandable>
+          <button class="exp-card__header" aria-expanded="false" aria-controls="exp-body-3">
+            <div class="exp-card__info">
+              <h3 class="exp-card__company">myairops</h3>
+              <p class="exp-card__role">Technical Lead</p>
+            </div>
+            <div class="exp-card__meta">
+              <span class="exp-card__date">Oct 2019 – Aug 2021</span>
+              <i class="fa-solid fa-chevron-down exp-card__icon"></i>
+            </div>
+          </button>
+          <div class="exp-card__body" id="exp-body-3">
+            <ul>
+              <li>Led a team of 8 engineers across microservice-based SaaS applications.</li>
+              <li>Designed and implemented new architecture while maintaining and upgrading legacy systems.</li>
+              <li>Delivered first customer launch of the new myairops platform.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-card" data-expandable>
+          <button class="exp-card__header" aria-expanded="false" aria-controls="exp-body-4">
+            <div class="exp-card__info">
+              <h3 class="exp-card__company">myairops</h3>
+              <p class="exp-card__role">Software Developer</p>
+            </div>
+            <div class="exp-card__meta">
+              <span class="exp-card__date">Mar 2019 – Oct 2019</span>
+              <i class="fa-solid fa-chevron-down exp-card__icon"></i>
+            </div>
+          </button>
+          <div class="exp-card__body" id="exp-body-4">
+            <ul>
+              <li>Full-stack development on aviation operations SaaS systems using Angular and .NET.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-card" data-expandable>
+          <button class="exp-card__header" aria-expanded="false" aria-controls="exp-body-5">
+            <div class="exp-card__info">
+              <h3 class="exp-card__company">Moneybarn</h3>
+              <p class="exp-card__role">Software Developer</p>
+            </div>
+            <div class="exp-card__meta">
+              <span class="exp-card__date">Aug 2016 – Feb 2019</span>
+              <i class="fa-solid fa-chevron-down exp-card__icon"></i>
+            </div>
+          </button>
+          <div class="exp-card__body" id="exp-body-5">
+            <ul>
+              <li>Tech lead on high-profile Angular/.NET Core projects including the MyMoneybarn customer portal.</li>
+              <li>Delivered customer finance systems integrated with third-party services.</li>
+              <li>Drove adoption of unit testing and code quality practices.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-card" data-expandable>
+          <button class="exp-card__header" aria-expanded="false" aria-controls="exp-body-6">
+            <div class="exp-card__info">
+              <h3 class="exp-card__company">Exclaimer</h3>
+              <p class="exp-card__role">QA Engineer</p>
+            </div>
+            <div class="exp-card__meta">
+              <span class="exp-card__date">Mar 2015 – Aug 2016</span>
+              <i class="fa-solid fa-chevron-down exp-card__icon"></i>
+            </div>
+          </button>
+          <div class="exp-card__body" id="exp-body-6">
+            <ul>
+              <li>Built automated testing for SPA applications using Selenium and C#.</li>
+              <li>Contributed to backend and frontend development within a TDD framework.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-card" data-expandable>
+          <button class="exp-card__header" aria-expanded="false" aria-controls="exp-body-7">
+            <div class="exp-card__info">
+              <h3 class="exp-card__company">BCA Europe</h3>
+              <p class="exp-card__role">Technical System Tester / Dev Support Analyst</p>
+            </div>
+            <div class="exp-card__meta">
+              <span class="exp-card__date">Dec 2012 – Mar 2015</span>
+              <i class="fa-solid fa-chevron-down exp-card__icon"></i>
+            </div>
+          </button>
+          <div class="exp-card__body" id="exp-body-7">
+            <ul>
+              <li>Created automation frameworks for agile delivery teams.</li>
+              <li>Supported and maintained core business applications across AS/400 and .NET stacks.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="section__label">Skills</div>
+
+        <div class="skills">
+          <div class="skills__group">
+            <h3 class="skills__heading">Frontend Development</h3>
+            <div class="skills__tags">
+              <span class="tag">Angular</span>
+              <span class="tag">Nx</span>
+              <span class="tag">React Native</span>
+              <span class="tag">RxJS</span>
+              <span class="tag">Module Federation</span>
+              <span class="tag">TypeScript</span>
+            </div>
+          </div>
+
+          <div class="skills__group">
+            <h3 class="skills__heading">Backend & Architecture</h3>
+            <div class="skills__tags">
+              <span class="tag">.NET Core</span>
+              <span class="tag">Web API</span>
+              <span class="tag">Microservices</span>
+              <span class="tag">Azure</span>
+            </div>
+          </div>
+
+          <div class="skills__group">
+            <h3 class="skills__heading">DevOps & Tooling</h3>
+            <div class="skills__tags">
+              <span class="tag">Azure DevOps</span>
+              <span class="tag">GitHub</span>
+              <span class="tag">CI/CD Pipelines</span>
+            </div>
+          </div>
+
+          <div class="skills__group">
+            <h3 class="skills__heading">Practices</h3>
+            <div class="skills__tags">
+              <span class="tag">Agile</span>
+              <span class="tag">TDD</span>
+              <span class="tag">Mentoring</span>
+              <span class="tag">Hiring</span>
+              <span class="tag">Code Reviews</span>
+              <span class="tag">Community of Practice Leadership</span>
+              <span class="tag">AI Tooling Adoption</span>
+            </div>
+          </div>
+
+          <div class="skills__group">
+            <h3 class="skills__heading">Systems Thinking</h3>
+            <div class="skills__tags">
+              <span class="tag">Legacy Migration</span>
+              <span class="tag">Performance Optimisation</span>
+              <span class="tag">System Design</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section__label">Projects</div>
+
+        <div class="projects">
+          <div class="project-card">
+            <div class="project-card__header">
+              <h3 class="project-card__name">Ombi</h3>
+              <span class="project-card__badge">Open Source • Founder</span>
+            </div>
+            <p class="project-card__desc">A highly successful open-source media request platform. Led development, architecture, and community engagement to grow the platform's adoption and stability.</p>
+            <div class="project-card__stats">
+              <div class="project-card__stat">
+                <span class="project-card__stat-number">500M+</span>
+                <span class="project-card__stat-label">Docker Pulls</span>
+              </div>
+            </div>
+            <a href="https://github.com/Ombi-app/Ombi" target="_blank" rel="noopener" class="btn btn--secondary"><i class="fa-brands fa-github"></i> View on GitHub</a>
+          </div>
+
+          <div class="project-card">
+            <div class="project-card__header">
+              <h3 class="project-card__name">Reporium</h3>
+              <span class="project-card__badge">SaaS Platform</span>
+            </div>
+            <p class="project-card__desc">A SaaS platform that uses AI to analyse GitHub repositories and deliver instant insights into code health, activity, and development trends.</p>
+            <a href="https://reporium.vercel.app/" target="_blank" rel="noopener" class="btn btn--secondary"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Project</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <footer>
+        <div class="section__label">Contact</div>
+        <h2 class="contact__heading">Let's connect</h2>
+        <p class="contact__text">Open to new opportunities where I can make a meaningful impact both technically and strategically.</p>
+
+        <div class="contact__links">
+          <a href="mailto:tidusjar@gmail.com" class="contact__link">
+            <i class="fa-solid fa-envelope"></i>
+            <span>tidusjar@gmail.com</span>
+          </a>
+          <a href="https://www.linkedin.com/in/jamiearees/" target="_blank" rel="noopener" class="contact__link">
+            <i class="fa-brands fa-linkedin"></i>
+            <span>linkedin.com/in/jamiearees</span>
+          </a>
+          <a href="https://github.com/tidusjar" target="_blank" rel="noopener" class="contact__link">
+            <i class="fa-brands fa-github"></i>
+            <span>github.com/tidusjar</span>
+          </a>
+        </div>
+        </footer>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
